@@ -1,0 +1,10 @@
+body {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+body::after {
+  text-transform: uppercase;
+}
+
+/*# sourceMappingURL=styles.css.map */
