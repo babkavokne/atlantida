@@ -4,15 +4,32 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   overflow: hidden;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
 }
 
 .container {
   min-width: 62.5vw;
   max-width: 62.5vw;
-  margin: 0 auto;
-  padding: 0 0.8vw;
+  min-height: 8.5vh;
+  max-height: 8.5vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__nav {
+  display: flex;
+  column-gap: 1vw;
 }
 
 /*# sourceMappingURL=styles.css.map */
