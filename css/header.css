@@ -1,7 +1,32 @@
-.header__wrapper {
+.header {
   display: flex;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+
+.container {
+  min-width: 62.5vw;
+  max-width: 62.5vw;
+  min-height: 8.5vh;
+  max-height: 8.5vh;
+  display: flex;
+}
+.container.header__container {
+  align-items: center;
   justify-content: space-between;
-  color: blue;
+}
+
+.header__nav {
+  display: flex;
+  column-gap: 1vw;
+  padding: 0 2vw;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5vw;
 }
 
 /*# sourceMappingURL=header.css.map */
