@@ -1,11 +1,18 @@
-.header__wrapper {
-  display: flex;
-  justify-content: space-between;
-  color: black;
-}
-
+@import 'header.css';
+@import 'footer.css';
 *, *::before, *::after {
   box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+}
+
+.container {
+  min-width: 62.5vw;
+  max-width: 62.5vw;
+  margin: 0 auto;
+  padding: 0 0.8vw;
 }
 
 /*# sourceMappingURL=styles.css.map */
