@@ -2,17 +2,15 @@
   display: flex;
   justify-content: center;
   font-family: "Montserrat", sans-serif;
+  font-size: 2vh;
+  color: #aaaaaa;
   text-transform: uppercase;
 }
 
 .container {
-  min-width: 62.5vw;
-  max-width: 62.5vw;
-  min-height: 8.5vh;
-  max-height: 8.5vh;
+  min-width: 80vw;
+  min-height: 10vh;
   display: flex;
-}
-.container.header__container {
   align-items: center;
   justify-content: space-between;
 }
@@ -20,12 +18,22 @@
 .header__nav {
   display: flex;
   column-gap: 1vw;
-  padding: 0 2vw;
+  padding: 0 2vw 0 0;
+}
+.header__nav a {
+  color: #aaa;
 }
 
 .logo {
   display: flex;
   align-items: center;
+  column-gap: 0.5vw;
+  font-size: 2.5vh;
+}
+
+.header__links {
+  display: flex;
+  justify-content: space-between;
   column-gap: 0.5vw;
 }
 

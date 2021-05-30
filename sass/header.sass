@@ -3,28 +3,37 @@
   justify-content: center
 
   font-family: 'Montserrat', sans-serif
+  font-size: 2vh
+  color: #aaaaaa
 
   text-transform: uppercase
 
 
 .container
-  min-width: 62.5vw
-  max-width: 62.5vw
+  min-width: 80vw
 
-  min-height: 8.5vh
-  max-height: 8.5vh
-
-  display: flex
-  &.header__container
-    align-items: center
-    justify-content: space-between
+  min-height: 10vh
   
+  display: flex
+  align-items: center
+  justify-content: space-between
+
 .header__nav
   display: flex
   column-gap: 1vw
-  padding: 0 2vw
+  padding: 0 2vw 0 0
+
+  a 
+    color: #aaa
 
 .logo
   display: flex
   align-items: center
+  column-gap: .5vw
+
+  font-size: 2.5vh
+
+.header__links
+  display: flex
+  justify-content: space-between
   column-gap: .5vw
