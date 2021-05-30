@@ -22,6 +22,24 @@
 }
 .header__nav a {
   color: #aaa;
+  position: relative;
+}
+.header__nav a::after {
+  content: "";
+  width: 0%;
+  height: 0.2vh;
+  background-color: #000;
+  position: absolute;
+  bottom: -0.2vh;
+  left: 50%;
+  transition: all 0.5s;
+}
+.header__nav a:hover::after {
+  width: 100%;
+  left: 0;
+}
+.header__nav a:hover {
+  color: #000;
 }
 
 .logo {
@@ -30,11 +48,19 @@
   column-gap: 0.5vw;
   font-size: 2.5vh;
 }
+.logo img {
+  min-height: 4vh;
+  max-height: 4vh;
+}
 
 .header__links {
   display: flex;
   justify-content: space-between;
   column-gap: 0.5vw;
+}
+.header__links img {
+  min-height: 1.3vh;
+  max-height: 1.3vh;
 }
 
 /*# sourceMappingURL=header.css.map */
