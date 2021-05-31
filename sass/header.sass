@@ -1,27 +1,23 @@
 .header
-  display: flex
-  justify-content: center
 
   font-family: 'Montserrat', sans-serif
   font-size: 2vh
   color: #aaaaaa
 
   text-transform: uppercase
-
-
-.container
-  min-width: 80vw
-
-  min-height: 10vh
   
+.header__line
+  min-height: 10vh
+
   display: flex
   align-items: center
   justify-content: space-between
 
 .header__nav
   display: flex
+  // flex-wrap: wrap
   column-gap: 1vw
-  padding: 0 2vw 0 0
+  padding: 0 2vw
 
   a 
     color: #aaa
@@ -55,6 +51,10 @@
   column-gap: .5vw
 
   font-size: 2.5vh
+  line-height: 5vh
+  color: #757575
+
+  padding-left: 2vw
 
   img
     min-height: 4vh 
@@ -64,6 +64,8 @@
   display: flex
   justify-content: space-between
   column-gap: .5vw
+  
+  padding-right: 2vw
   
   img
     min-height: 1.3vh

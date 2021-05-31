@@ -1,0 +1,8 @@
+.main-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../images/slider-background.jpg) top center/cover no-repeat;
+}
+
+/*# sourceMappingURL=header-slider.css.map */
