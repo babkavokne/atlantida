@@ -14,6 +14,7 @@
 
 .header__nav {
   display: flex;
+  flex-wrap: wrap;
   column-gap: 1vw;
   padding: 0 2vw;
 }
