@@ -14,6 +14,8 @@
 
   color: #fff
 
+  position: relative
+
 .slider__item 
   flex-direction: column
   align-items: center
@@ -34,6 +36,8 @@
   position: relative
 
   padding: 0 2vh
+
+  text-align: center
 
   &::before 
     content: ''
@@ -70,10 +74,18 @@
 
   position: absolute
 
-  bottom: 0
+  bottom: -6vh
   left: 50%
 
   transform: translateX(-50%)
-  
-  background-image: url('../images/btn-arrow.png')
+
+  background: url('../images/btn-arrow.png') center center/ cover no-repeat
+
+  width: 1vw
+  height: 6.8vh
+
+.silder__clicker
+  position: absolute
+  top: 0
+  left: 0
   
