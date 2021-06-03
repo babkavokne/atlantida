@@ -17,4 +17,12 @@ body {
   margin: 0 auto;
 }
 
+.btn {
+  font-family: "Montserrat", sans-serif;
+}
+
+.btn__white {
+  border: 1vh solid #fff;
+}
+
 /*# sourceMappingURL=global.css.map */

@@ -1,3 +1,7 @@
+@font-face
+  font-family: 'Amdsdam'
+  src: url("../amsdam/amsdam.ttf") format("opentype")
+
 .main-slider
   display: flex
 
@@ -8,7 +12,55 @@
   
   height: 90vh
 
-  // min-width: 100vw
-  // max-width: 100vw
+  color: #fff
 
-  object-fit: cover
+.slider__item 
+  flex-direction: column
+  align-items: center
+  row-gap: 2.5vh
+
+.slider__suptitle
+  font-family: 'Crimson Text', serif
+
+  font-size: 1.8vh
+  letter-spacing: .4vh
+
+.slider__title
+  font-family: 'Amdsdam'
+
+  font-size: 3vh
+  letter-spacing: .4vh
+
+  position: relative
+
+  padding: 0 2vh
+
+  &::before 
+    content: ''
+
+    position: absolute
+
+    top: 0
+    left: -1vh
+
+    height: 1vh
+    width: 100%
+
+    background-image: url('../images/wave-line.png')
+    background-repeat: repeat-x
+    background-size: 10vh
+
+  &::after
+    content: ''
+
+    position: absolute
+
+    bottom: 0
+    left: -1vh
+
+    height: 1vh
+    width: 100%
+
+    background-image: url('../images/wave-line.png')
+    background-repeat: repeat-x
+    background-size: 10vh

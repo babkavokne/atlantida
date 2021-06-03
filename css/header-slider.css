@@ -1,10 +1,56 @@
+@font-face {
+  font-family: "Amdsdam";
+  src: url("../amsdam/amsdam.ttf") format("opentype");
+}
 .main-slider {
   display: flex;
   justify-content: center;
   align-items: center;
   background: url(../images/slider-background.jpg) top center/cover no-repeat;
   height: 90vh;
-  object-fit: cover;
+  color: #fff;
+}
+
+.slider__item {
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2.5vh;
+}
+
+.slider__suptitle {
+  font-family: "Crimson Text", serif;
+  font-size: 1.8vh;
+  letter-spacing: 0.4vh;
+}
+
+.slider__title {
+  font-family: "Amdsdam";
+  font-size: 3vh;
+  letter-spacing: 0.4vh;
+  position: relative;
+  padding: 0 2vh;
+}
+.slider__title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -1vh;
+  height: 1vh;
+  width: 100%;
+  background-image: url("../images/wave-line.png");
+  background-repeat: repeat-x;
+  background-size: 10vh;
+}
+.slider__title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -1vh;
+  height: 1vh;
+  width: 100%;
+  background-image: url("../images/wave-line.png");
+  background-repeat: repeat-x;
+  background-size: 10vh;
 }
 
 /*# sourceMappingURL=header-slider.css.map */

@@ -19,6 +19,7 @@
   padding: 0 2vw;
 }
 .header__nav a {
+  line-height: 3vh;
   color: #aaa;
   position: relative;
 }
