@@ -7,15 +7,15 @@
 
 .header__line {
   min-height: 10vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
 }
 
 .header__nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   column-gap: 1vw;
   padding: 0 2vw;
 }
@@ -57,9 +57,7 @@
 }
 
 .header__links {
-  display: flex;
-  justify-content: space-between;
-  column-gap: 0.5vw;
+  text-align: right;
   padding-right: 1vw;
 }
 .header__links img {

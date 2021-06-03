@@ -9,14 +9,14 @@
 .header__line
   min-height: 10vh
 
-  display: flex
-  align-items: center
-  justify-content: space-between
+  display: grid
+  grid-template-columns:  1fr max-content 1fr
 
 .header__nav
   display: flex
   flex-wrap: wrap
   justify-content: center
+  align-items: center
 
   column-gap: 1vw
 
@@ -66,9 +66,10 @@
     max-height: 4vh
 
 .header__links
-  display: flex
-  justify-content: space-between
-  column-gap: .5vw
+  text-align: right
+  // display: flex
+  // justify-content: space-between
+  // column-gap: .5vw
   
   padding-right: 1vw
   
