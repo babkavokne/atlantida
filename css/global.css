@@ -19,10 +19,13 @@ body {
 
 .btn {
   font-family: "Montserrat", sans-serif;
+  padding: 2vh 1.6vw;
+  color: #ffffff;
+  position: relative;
 }
 
-.btn__white {
-  border: 1vh solid #fff;
+.btn_white {
+  border: 0.3vh solid #fff;
 }
 
 /*# sourceMappingURL=global.css.map */
