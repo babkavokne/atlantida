@@ -2,7 +2,6 @@
 
   font-family: 'Montserrat', sans-serif
   font-size: 2vh
-  color: #aaaaaa
 
   text-transform: uppercase
   
@@ -10,7 +9,7 @@
   min-height: 10vh
 
   display: grid
-  grid-template-columns:  1fr max-content 1fr
+  grid-template-columns:  1fr 4fr 1fr
 
 .header__nav
   display: flex
@@ -22,9 +21,7 @@
 
   padding: 0 2vw
   
-  a 
-    line-height: 3vh
-
+  a
     color: #aaa
     
     position: relative
@@ -48,7 +45,44 @@
 
     &:hover
       color: #000
-      
+
+.burger
+  cursor: pointer
+
+  width: 1.5vw
+  height: .55vh
+
+  background-color: #000
+
+  border-radius: 10px
+
+  position: relative
+
+  display: none
+
+  &::before
+    content: ""
+
+    bottom: .8vh
+
+    width: 1.5vw
+    height: .55vh
+
+    background-color: #000
+
+    position: absolute
+
+  &::after
+    content: ""
+
+    top: .9vh
+
+    width: 1.5vw
+    height: .55vh
+
+    background-color: #000
+
+    position: absolute
 
 .logo
   display: flex
@@ -66,13 +100,30 @@
     max-height: 4vh
 
 .header__links
-  text-align: right
-  // display: flex
-  // justify-content: space-between
-  // column-gap: .5vw
+  display: flex
+
+  justify-content: flex-end
+  align-items: center
+
+  column-gap: 1vw
   
   padding-right: 1vw
   
   img
     min-height: 1.3vh
     max-height: 1.3vh
+
+  
+@media (max-width: 1199.98px) 
+  .header__nav
+    padding: 1.9vh
+
+@media (max-width: 767.98px)
+  .logo p
+    display: none
+  
+@media (max-width: 575.98px)
+  .burger
+    display: block
+  .header__nav a
+    display: none
