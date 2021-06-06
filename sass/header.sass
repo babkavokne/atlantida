@@ -49,7 +49,7 @@
 .burger
   cursor: pointer
 
-  width: 1.5vw
+  width: 4vh
   height: .55vh
 
   background-color: #000
@@ -65,10 +65,12 @@
 
     bottom: .8vh
 
-    width: 1.5vw
+    width: 4vh
     height: .55vh
 
     background-color: #000
+
+    border-radius: 10px
 
     position: absolute
 
@@ -77,10 +79,12 @@
 
     top: .9vh
 
-    width: 1.5vw
-    height: .55vh
+    width: 4vh
+    height: .50vh
 
     background-color: #000
+
+    border-radius: 10px
 
     position: absolute
 
@@ -123,7 +127,18 @@
     display: none
   
 @media (max-width: 575.98px)
+  .logo
+    img
+      min-height: 5.5vh 
+      max-height: 5.5vh
+
+  .header__links
+    img
+      min-height: 1.8vh
+      max-height: 1.8vh
+
   .burger
     display: block
+  
   .header__nav a
     display: none

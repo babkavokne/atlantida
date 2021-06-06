@@ -42,7 +42,7 @@
 
 .burger {
   cursor: pointer;
-  width: 1.5vw;
+  width: 4vh;
   height: 0.55vh;
   background-color: #000;
   border-radius: 10px;
@@ -52,17 +52,19 @@
 .burger::before {
   content: "";
   bottom: 0.8vh;
-  width: 1.5vw;
+  width: 4vh;
   height: 0.55vh;
   background-color: #000;
+  border-radius: 10px;
   position: absolute;
 }
 .burger::after {
   content: "";
   top: 0.9vh;
-  width: 1.5vw;
-  height: 0.55vh;
+  width: 4vh;
+  height: 0.5vh;
   background-color: #000;
+  border-radius: 10px;
   position: absolute;
 }
 
@@ -103,6 +105,16 @@
   }
 }
 @media (max-width: 575.98px) {
+  .logo img {
+    min-height: 5.5vh;
+    max-height: 5.5vh;
+  }
+
+  .header__links img {
+    min-height: 1.8vh;
+    max-height: 1.8vh;
+  }
+
   .burger {
     display: block;
   }
