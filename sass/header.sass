@@ -122,20 +122,27 @@
   .header__nav
     padding: 1.9vh
 
-@media (max-width: 767.98px)
+@media (max-width: 665.98px)
   .logo p
     display: none
   
+
+
 @media (max-width: 575.98px)
+  .header__line
+    display: flex
+    justify-content: space-between
+
+  .logo p
+    display: block
+
   .logo
     img
       min-height: 5.5vh 
       max-height: 5.5vh
 
   .header__links
-    img
-      min-height: 1.8vh
-      max-height: 1.8vh
+    display: none
 
   .burger
     display: block

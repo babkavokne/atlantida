@@ -29,4 +29,10 @@ body {
   border: 0.3vh solid #fff;
 }
 
+@media (max-width: 575.98px) {
+  .btn {
+    font-size: 3vh;
+  }
+}
+
 /*# sourceMappingURL=global.css.map */
