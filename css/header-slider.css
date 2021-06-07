@@ -97,17 +97,18 @@
 
 #slider__dot {
   display: flex;
-  justify-content: center;
-  list-style: none;
   column-gap: 2vh;
+  justify-content: center;
   position: absolute;
-  bottom: 0;
-  left: 50vh;
+  left: 15.5vw;
+  bottom: 7.5vh;
+  list-style: none;
 }
 #slider__dot li {
   width: 1.8vh;
   height: 1.8vh;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
 }
 
 @media (max-width: 991.98px) {
