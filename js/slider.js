@@ -30,3 +30,16 @@ function showSlides(n) {
 
   slides[slideIndex - 1].style.display = "flex";
 }
+
+function showSlideDots(){
+  let slides = document.getElementsByClassName("slider__item");
+  let parent = document.getElementById("slider__dot");
+
+  for (let i = 0; i < slides.length; i++) {
+    let slideDot = document.createElement('li');
+    parent.appendChild(slideDot);
+    console.log(i)
+  }
+}
+
+showSlideDots();
