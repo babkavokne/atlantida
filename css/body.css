@@ -23,7 +23,7 @@
 .about-us__title {
   font-family: "Amdsdam";
   font-size: 2.65vh;
-  padding: 0 1vw;
+  padding: 0 2vw;
   position: relative;
 }
 .about-us__title::after {
@@ -41,6 +41,20 @@
 .about-us__content {
   line-height: 4vh;
   font-family: "Crimson Text", serif;
+}
+
+.about-us__btn {
+  display: flex;
+  column-gap: 0.5vw;
+}
+
+.black-border {
+  color: #3e3d3d;
+  border: 0.3vh solid #3e3d3d;
+}
+.black-border:hover {
+  background-color: #3e3d3d;
+  color: #cecece;
 }
 
 /*# sourceMappingURL=body.css.map */
