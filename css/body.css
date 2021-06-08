@@ -40,12 +40,16 @@
 
 .about-us__content {
   line-height: 4vh;
+  font-size: 2.5vh;
   font-family: "Crimson Text", serif;
 }
 
 .about-us__btn {
   display: flex;
   column-gap: 0.5vw;
+}
+.about-us__btn .btn {
+  min-width: 9.4vw;
 }
 
 .black-border {
@@ -55,6 +59,39 @@
 .black-border:hover {
   background-color: #3e3d3d;
   color: #cecece;
+}
+
+.about-us__statistic {
+  display: flex;
+  justify-content: center;
+  column-gap: 8vw;
+  margin-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+.about-us__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1.5vh;
+  text-align: center;
+}
+
+.about-us__icon img {
+  height: 5.7vh;
+}
+
+.about-us__item-title {
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2vh;
+  overflow: hidden;
+  width: 6vw;
+}
+
+.about-us__item-content {
+  font-size: 6vh;
+  font-family: "Montserrat", sans-serif;
 }
 
 /*# sourceMappingURL=body.css.map */
