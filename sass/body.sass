@@ -18,8 +18,6 @@
 
   padding: 6.6vh 4.5vw
 
-  font-size: 2vh
-
 .about-us__title
   font-family: 'Amdsdam'
   font-size: 2.65vh
@@ -70,10 +68,8 @@
 
 .about-us__statistic 
   display: flex
+  flex-wrap: wrap
   justify-content: center
-  column-gap: 8vw
-
-  margin-top: 10vh
   padding-bottom: 10vh
 
 .about-us__item 
@@ -82,11 +78,14 @@
   align-items: center
   row-gap: 1.5vh
 
+  margin-top: 10vh
+
+  flex: 0 0 25%
+
   text-align: center
 
-  // &:not(:last-child)
-  //   // padding-right: 10%
-  //   border-right: 0.1vh solid #b0b0b0
+  &:not(:last-child)
+    border-right: 1px solid #b0b0b0
 
 .about-us__icon 
   img
@@ -98,10 +97,40 @@
   font-family: 'Montserrat', sans-serif
 
   font-size: 2vh
+  width: 80%
 
-  overflow: hidden
-  width: 6vw
+  span
+    white-space: pre-line
 
 .about-us__item-content
   font-size: 6vh
   font-family: 'Montserrat', sans-serif
+
+@media (max-width: 991.98px)
+  .about-us__item 
+    flex: 0 0 50%
+    &:nth-child(even)
+      border: none
+
+@media (max-width: 767.98px)
+  .about-us__img 
+    display: none
+
+@media (max-width: 575.98px)
+  .container
+    max-width: 100vw  
+    margin: 0
+
+  .about-us
+    padding-top: 0
+  
+  .about-us__content
+    font-size: 3.5vh
+
+  .about-us__item
+    row-gap: 0
+    &:nth-child(n)
+      border: none
+      
+  
+    
